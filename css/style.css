@@ -163,9 +163,10 @@ body {
 .search--block span {
     cursor: pointer;
     position: absolute;
+    top: 0;
     right: 0;
     margin: 2px;
-    padding: 0 4px;
+    padding: 0 6px;
     height: 89%;
     border-radius: 2px;
     background-color: #c8b59b;
@@ -190,6 +191,9 @@ body {
     top: 3px;
 }
 .menu--link:hover {
+    color: #f0e05b;
+}
+.active--menu {
     color: #f0e05b;
 }
 .social--networks {
@@ -236,7 +240,7 @@ body {
     position: absolute;
     top: 0;
     left: 99%;
-    z-index: 1;
+    z-index: 5;
     padding-left: 14px;
     display: none;
 }
@@ -262,12 +266,12 @@ body {
     color: #744937;
 }
 .rybalka--podMenu {
-    top: -75px;
+    top: -100px;
 }
 .content {
     box-shadow: 0px 0px 24px 20px rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 7px;
+    border-radius: 2px;
     padding: 30px;
     margin: 20px ;
 }
@@ -371,114 +375,121 @@ body {
 .footer--logo {
     width: 66%;
 }
-
-
-
-/* Стили для мобильной версии: */
-@media screen and (max-width: 1200px) {
-    .phone {
-        font-size: 16px;
-    }
-    .menu--link {
-        padding: 9px 16px 6px;
-    }
+.content--title {
+    font-family: 'ArnoPro-Bold';
+    font-size: 24px;
+    padding: 0 0 20px;
+    color: #46362f;
 }
-@media screen and (max-width: 991px) {
-    .header--catalog img {
-        max-width: 100%;
-    }
-    .none--block {
-        display: none;
-    }
-    .text--right {
-        text-align: left;
-    }
-    .korzina--block {
-        text-align: right;
-    }
-    .korzina--cost {
-        left: 180px;
-    }
-    .fixed--menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(214, 210, 210);
-        z-index: 9999;
-        display: none;
-    }
-    .fixed--menu.active {
-        display: block;
-    }
-    .menu {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex-direction: column;
-        transition: .4s;
-    }
-    .burger--menu {
-        display: flex;
-    }
-    .menu--block {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-    }
-    .menu--link {
-        margin: 5px 0;
-    }
-    .search--block input {
-        padding: 10px 32px 10px 16px;
-    }
-    .search--block span {
-        padding: 3px 10px;
-    }
-    .search--block {
-        order: 1;
-        margin-top: 20px;
-    }
+/* Страница "Контакты": */
+.call--back--txt {
+    font-family: 'ArnoPro-Bold';
+    font-size: 20px;
+    color: #46362f;
+    line-height: 22px;
 }
-@media screen and (max-width: 767px) {
-    .main--block {
-        flex-direction: column;
-    }
-    .content {
-        margin: 87px 0 20px
-    }
-    .footer--block {
-        justify-content: center;
-    }
-    .example--txt {
-        padding: 0;
-    }
-    .korzina--cost {
-        left: 90px;
-        font-size: 20px;
-    }
+.call--back--txt span {
+    padding-left: 20px;
 }
-@media screen and (max-width: 576px) {
-    .footer--block {
-        padding: 0;
-        justify-content: space-between;
-    }
-    .footer--txt {
-        margin: 0 0 0 2px;
-        line-height: 14px;
-        top: 2px;
-    }
-    .footer--logo--img {
-        text-align: right;
-    }
+/* Страница "Маска для лица:" */
+.product--content {
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255);
 }
-@media screen and (max-width: 356px) {
-    .footer--logo--img {
-        width: 60px
-    }
-    .footer--txt {
-        font-size: 14px;
-    }
+.product--container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.product--header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddcdc;
+}
+.product--item {
+    margin: 0 5px;
+}
+.product--item select {
+    font-family: 'Arial-Bold';
+    font-size: 14px;
+    color: #5c5b5b;
+    border: 1px solid #dddcdc;
+    padding: 3px 0 1px;
+}
+.product--item span {
+    font-family: 'Arial-Bold';
+    font-size: 12px;
+    color: #5c5b5b;
+}
+.product--btn {
+    cursor: pointer;
+}
+.product--block {
+    text-align: center;
+    width: 160px;
+    margin: 10px 20px 10px 0;
+}
+.product--block--item {
+    min-height: 312px;
+}
+.product--img {
+    border: 1px solid #dddcdc;
+    padding: 30px;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product--desc {
+    font-family: 'Arial-Bold';
+    font-size: 12px;
+    color: #8a8888;
+    line-height: 16px;
+    padding-top: 7px;
+}
+.product--price {
+    font-family: 'Arial-Bold';
+    font-size: 14px;
+    color: rgb(45, 189, 247);
+}
+.korzina--button {
+    font-family: 'ArnoPro-Bold';
+    font-size: 12px;
+    color: #46362f;
+    padding: 7px 12px 4px;
+    border-radius: 14px;
+    border: none;
+    background-color: #d7a174;
+    box-shadow: 0px 1px 2px #46362f;
+    transition: .2s;
+    position: relative;
+    z-index: 2;
+}
+.korzina--button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -35%;
+    width: 30px;
+    height: 2px;
+    background-color: #ececec;
+    z-index: 1;
+}
+.korzina--button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -35%;
+    width: 30px;
+    height: 2px;
+    background-color: #ececec;
+    z-index: 1;
+}
+.korzina--button:hover {
+    box-shadow: 0px 0px 0px #46362f;
+}
+.korzina--button:focus {
+    outline: none;
+    border: none;
 }
