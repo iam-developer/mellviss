@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>МэллВис | Новости</title>
+    <title>МэллВис | Личный кабинет</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
@@ -81,7 +81,7 @@
                                 <span><img src="../img/search.png" alt="поиск по сайту"></span>
                             </div>
                             <div class="menu--block">
-                                <a href="./../novosti/" class="menu--link active--menu">Новости</a>
+                                <a href="./../novosti/" class="menu--link">Новости</a>
                                 <a href="./../o_nas/" class="menu--link">О нас</a>
                                 <a href="./../dostavka/" class="menu--link">Доставка</a>
                                 <a href="./../akcii/" class="menu--link">Акции</a>
@@ -102,8 +102,8 @@
         </header>
 
         <div class="container">
-            <div class="main--block d-flex justify-content-start align-items-start col-lg-12">
-                <div class="col-lg-3">
+            <div class="main--block d-flex justify-content-between align-items-start col-lg-12">
+                <div class="col-lg-3 col-md-3">
                     <div class="categories">
                         <img src="../img/image.png" alt="">
                         <div class="categories--block">
@@ -321,20 +321,109 @@
                         </div>
                     </div>
                 </div>
-                <div class="content col-lg-9">
-                    <div class="call--back">
-                        <h3 class="content--title">Новости:</h3>
-                        <p class="call--back--txt">
-                            31.12.2020   13:17<br/><br/>
-
-                            ЗАВЕРШЕНА РЕКОНСТРУКЦИЯ ВОКЗАЛА ПЕТРОЗАВОДСКА: ТЕХНИЧЕСКАЯ НАЧИНКА НОВАЯ, АРХИТЕКТУРНЫЕ ДЕТАЛИ СОХРАНЕНЫ<br/><br/>
-
-                            ОАО «РЖД» завершило масштабную реконструкцию вокзального комплекса Петрозаводск. Вокзал построен в 1955 году в стиле позднего неоклассицизма. Отреставрирован исторический облик здания, проведена его адаптация для маломобильных пассажиров и построен новый пешеходный мост.<br/><br/>
-
-                            Особое внимание уделялось сохранению исторического облика вокзального комплекса, который представляет собой пример позднего неоклассицизма и является объектом культурного наследия. Реставрационные работы проводились в вестибюле здания вокзала и на балконе, на центральной лестнице восстановили мраморную облицовку, был выполнен ремонт стропильной системы купола с реставрацией ротонды и заменой шпиля.<br/><br/>
-
-                            Кроме того, на вокзале была создана безбарьерная среда – все функциональные зоны комплекса адаптированы для маломобильных пассажиров. Были установлены пандусы и подъемники, обновлены санитарные комнаты, установлена касса с пониженным прилавком. Вокзал оснащен индукционным оборудованием для слабослышащих посетителей, для пассажиров с нарушениями зрения размещены тактильно-контрастные указатели, пиктограммы, мнемосхемы и информирующие тактильные таблички, выполненные рельефно-точечным шрифтом Брайля.<br/><br/>
-                        </p>
+                <div class="content kabinet--content col-lg-9 col-md-7">
+                    <div class="kabinet--header d-flex justify-content-between align-items-center">
+                        <div class="kabinet--title">Личный кабинет</div>
+                        <div class="kabinet--links">
+                            <a href="#">Написать нам</a>
+                            <a href="">Выйти</a>
+                        </div>
+                    </div>
+                    <div class="kabinet--container">
+                       <div class="kabinet--block">
+                           <div class="avatar">
+                                <div class="avatar--img d-flex justify-content-center align-items-center">
+                                    <span>ФОТО</span>
+                                </div>
+                                <input type="file" name="file" id="input__file" class="input input__file">
+                                <label for="input__file">Добавить</label>
+                           </div>
+                       </div>
+                       <div class="kabinet--block d-flex justify-content-between align-items-start">
+                            <div class="">
+                                <h3 class="kabinet--block--title">ТЕКУЩАЯ СКИДКА</h3>
+                                <p class="kabinet--block--txt">e-mail</p>
+                                <p class="kabinet--block--txt">телефон</p>
+                                <p class="kabinet--block--txt">город, область</p>
+                                <p class="kabinet--block--txt">адрес</p>
+                                <p class="kabinet--block--txt">ФИО</p>
+                                <p class="kabinet--block--txt">пол</p>
+                                <p class="kabinet--block--txt">дата рождения</p>
+                                <p class="kabinet--block--txt">мои интересы</p>
+                            </div>
+                            <div class="text-right">
+                                <h3 class="kabinet--block--title">0%</h3>
+                                <p class="kabinet--block--txt">нет</p>
+                                <p class="kabinet--block--txt">нет</p>
+                                <p class="kabinet--block--txt">+7 (000) 000 00 00</p>
+                                <p class="kabinet--block--txt">0%</p>
+                                <p class="kabinet--block--txt">нет</p>
+                                <p class="kabinet--block--txt">нет</p>
+                                <p class="kabinet--block--txt">нет</p>
+                                <p class="kabinet--block--txt">нет</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save--button text-right">
+                        <button class="save">Сохранить</button>
+                    </div>
+                    <div class="kabinet--header d-flex justify-content-between align-items-center">
+                        <div class="kabinet--title">Последние заказы</div>
+                    </div>
+                    <div class="poslednie--zakazy extra--zakaz d-flex justify-content-between align-items-center">
+                        <div class="zakazy">
+                            <span>1</span>
+                            <span>№2356</span>
+                            <span id="date">1 января 2021 00:01</span>
+                            <span>5 шт</span>
+                        </div>
+                        <div class="zakazy">
+                            <span id="price">1539 руб</span>
+                        </div>
+                    </div>
+                    <div class="poslednie--zakazy d-flex justify-content-between align-items-center">
+                        <div class="zakazy">
+                            <span>2</span>
+                            <span>№2356</span>
+                            <span id="date">1 января 2021 00:01</span>
+                            <span>5 шт</span>
+                        </div>
+                        <div class="zakazy">
+                            <span id="price">1539 руб</span>
+                        </div>
+                    </div>
+                    <div class="poslednie--zakazy d-flex justify-content-between align-items-center">
+                        <div class="zakazy">
+                            <span>3</span>
+                            <span>№2356</span>
+                            <span id="date">1 января 2021 00:01</span>
+                            <span>5 шт</span>
+                        </div>
+                        <div class="zakazy">
+                            <span id="price">1539 руб</span>
+                        </div>
+                    </div>
+                    <div class="poslednie--zakazy d-flex justify-content-between align-items-center">
+                        <div class="zakazy">
+                            <span>4</span>
+                            <span>№2356</span>
+                            <span id="date">1 января 2021 00:01</span>
+                            <span>5 шт</span>
+                        </div>
+                        <div class="zakazy">
+                            <span id="price">1539 руб</span>
+                        </div>
+                    </div>
+                    <div class="poslednie--zakazy d-flex justify-content-between align-items-center">
+                        <div class="zakazy">
+                            <span>5</span>
+                            <span>№2356</span>
+                            <span id="date">1 января 2021 00:01</span>
+                            <span>5 шт</span>
+                        </div>
+                        <div class="zakazy">
+                            <span id="price">1539 руб</span>
+                        </div>
                     </div>
                 </div>
             </div>

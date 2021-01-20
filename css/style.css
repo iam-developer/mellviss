@@ -20,6 +20,11 @@
     font-family: 'Arial-Bold';
     src: url(../fonts/Arial-bold.ttf);
 }
+@font-face {
+    font-family: 'ArnoPro-SmbdItalicSubhead';
+    src: url(../fonts/ArnoPro-SmbdItalicSubhead.otf);
+}
+
 /* end */
 
 * {
@@ -91,6 +96,10 @@ body {
     top: 0;
     right: 20px;
     cursor: pointer;
+    display: none;
+}
+.close--menu.active {
+    display: block;
 }
 /* Главная страница */
 .header--back {
@@ -202,14 +211,58 @@ body {
     border-radius: 2px;
     margin: 1px 0 0 30px; 
 }
-.sign--in {
-    margin-left: 10px;
-}
 .main--block {
     width: 100%;
 }
 .main--block {
     padding: 40px 0;
+}
+.header--catalog {
+    position: relative;
+}
+.product--hover {
+    font-family: 'ArnoPro-Bold';
+    font-size: 14px;
+    color: oldlace;
+    padding: 2px 6px 0;
+    background-color: #46362f;
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    z-index: 22;
+    display: none;
+}
+.dacha:hover .dacha--hover {
+    display: block;
+}
+.telo:hover .telo--hover {
+    display: block;
+}
+.tekstil:hover .tekstil--hover {
+    display: block;
+}
+.deti:hover .deti--hover {
+    display: block;
+}
+.home:hover .home--hover {
+    display: block;
+}
+.books:hover .books--hover {
+    display: block;
+}
+.fish:hover .fish--hover {
+    display: block;
+}
+.sign--in {
+    margin-left: 10px;
+    position: relative;
+}
+.lich--kab {
+    width: 111px;
+    bottom: -40px;
+}
+.sign--in:hover .lich--kab  {
+    display: block;
 }
 .categories {
     position: relative;
@@ -358,7 +411,7 @@ body {
 }
 .footer--block {
     padding-top: 20px;
-    padding-right: 30px;
+    padding-right: 10px;
     justify-content: flex-end;
 }
 .footer--txt {
@@ -416,6 +469,9 @@ body {
     color: #5c5b5b;
     border: 1px solid #dddcdc;
     padding: 3px 0 1px;
+}
+.product--item select:focus {
+    outline: none;
 }
 .product--item span {
     font-family: 'Arial-Bold';
@@ -492,4 +548,368 @@ body {
 .korzina--button:focus {
     outline: none;
     border: none;
+}
+/* Страница "Каталог": */
+.catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.catalog--content {
+    padding: 0;
+}
+.catalog--item {
+    background: rgba(255, 255, 255);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255); 
+    margin: 30px;
+    width: 210px;
+    height: 210px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalog--item img {
+    transform: scale(1);
+    transition: .3s;
+}
+.catalog--item:hover img{
+    transform: scale(1.2);
+}
+.catalog--link {
+    position: relative;
+}
+.catalog--hover {
+    right: 20px;
+}
+.akcii:hover .akcii--hover {
+    display: block;
+}
+.uhod {
+    width: 90px;
+}
+.politic {
+    padding: 20px 0 0;
+}
+.politic--block {
+    position: relative;
+    top: 4px;
+}
+.politic--block a {
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    z-index: 1;
+    font-family: 'ArnoPro-SmbdItalicSubhead';
+    font-size: 16px;
+    color: #231f20;
+}
+#email {
+    padding-left: 56px;
+}
+#call--phone {
+    padding-left: 37px;
+}
+.footer-social:hover {
+    color: #724d3e;
+}
+.type--txt {
+    width: 100%;
+    height: 200px;
+    margin: 7px 0;
+    padding: 7px;
+    resize: none;
+}
+.type--txt:focus {
+    outline: none;
+}
+.check--block {
+    margin: 2px 0 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.galochka--ramka {
+    border: 1px solid #744937;
+    cursor: pointer;
+}
+.check--img {
+    padding: 0 4px 4px 4px;
+    visibility: hidden;
+}
+.check--img.selected {
+    visibility: visible;
+}
+.check--text {
+    font-family: 'ArnoPro-SmbdItalicSubhead';
+    font-size: 14px;
+    color: #46362f;
+    padding-left: 5px;
+    line-height: 14px;
+}
+.send--btn {
+    font-family: 'ArnoPro-Bold';
+    font-size: 20px;
+    color: #fff;
+    padding: 2px 20px;
+    background-color: #46362f;
+    border: none;
+    margin: 10px 0;
+}
+#add--file {
+    margin-bottom: 5px;
+}
+/* Личный кабинет */
+.kabinet--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.kabinet--block {
+    width: 30%;
+}
+.kabinet--block:last-child {
+    width: 70%;
+}
+.kabinet--header {
+    padding: 5px 10px;
+    background-color: #46362f;
+}
+.kabinet--title,
+.kabinet--links a {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 14px;
+    color: #f4e9d4;
+    transition: .3s;
+}
+.kabinet--links a:first-child {
+    margin-right: 14px;
+}
+.kabinet--links a:hover {
+    color: #f8c5af;
+}
+.kabinet--content {
+    padding: 12px;
+    margin: 12px;
+}
+.avatar--img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 30px 10px 20px;
+}
+.avatar--img span {
+    font-family: 'ArnoPro-Bold';
+    font-size: 24px;
+    color: #766863;
+}
+.input__file {
+    display: none;
+}
+.avatar label {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 14px;
+    color: #f4e9d4;
+    padding: 2px 30px;
+    background-color: #46362f;
+}
+.kabinet--block--title {
+    font-family: 'ArnoPro-Bold';
+    font-size: 18px;
+    color: #46362f;
+    padding: 14px 0;
+}
+.kabinet--block--txt {
+    font-family: 'ArnoPro-Bold';
+    font-size: 14px;
+    color: #46362f;
+}
+.kabinet--block:last-child {
+    padding-right: 10px;
+}
+.save {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 14px;
+    color: #f4e9d4;
+    padding: 2px 30px;
+    background-color: #46362f;
+    border: none;
+    text-align: right;
+    transition: .3s;
+    margin: 10px;
+}
+.save:hover {
+    color: #e4ac96;
+}
+.zakazy span {
+    font-family: 'ArnoPro-Bold';
+    font-size: 14px;
+    color: #46362f;
+    padding-right: 30px;
+}
+#price {
+    padding-right: 3px;
+}
+#date {
+    padding-right: 10px;
+}
+.extra--zakaz {
+    padding-top: 10px;
+}
+/* Страница "Корзина" */
+.korzina--content {
+    padding: 20px;
+}
+.korzina--table {
+    width: 100%;
+}
+.korzina--table--header {
+    padding: 8px 0;
+}
+.korzina--txt {
+    font-family: 'A';
+    font-size: 14px;
+    padding: 3px 5px;
+    color: #46362f;
+    border: 1px solid #46362f;
+    height: 100%;
+    border-right: none;
+    border-bottom: none;
+    text-align: center;
+    background-color: #fff;
+}
+.border--bottom {
+    border-bottom: 1px solid #46362f;
+}
+.korzina--txt:last-child {
+    border-right: 1px solid #46362f;
+}
+.tablica {
+    height: 110px;
+}
+.korzina--block1 {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.korzina--block2 {
+    width: 290px;
+}
+.korzina--block3 {
+    width: 125px;
+}
+.korzina--block4 {
+    width: 80px;
+}
+.korzina--block5 {
+    width: 70px;
+}
+.korzina--block6 {
+    width: 120px;
+}
+.itog {
+    margin-top: 20px;
+}
+.itog--info {
+    padding: 10px 10px 0;
+}
+.itog--txt {
+    font-family: 'ArnoPro-Bold';
+    color: #46362f;
+}
+.itog--info2 {
+    padding: 0 10px;
+    border-bottom: 1px solid #46362f;
+}
+.itog--info3 {
+    padding: 5px 10px 0;
+}
+.korzina--btn--link a {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 14px;
+    color: #f4e9d4;
+    background-color: #46362f;
+    padding: 5px 40px;
+}
+.korzina--btn--link {
+    text-align: right;
+    margin: 10px 0;
+}
+.oform--text {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 18px;
+    color: #231f20;
+    padding-left: 10px;
+    width: 140px;
+}
+.oform--border {
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #46362f;
+}
+.oform--tit {
+    padding-bottom: 10px;
+}
+.oform--txt2 {
+    min-width: 180px;
+    text-align: right;
+    padding-right: 10px;
+}
+.oform--input {
+    padding: 0 4px;
+    width: 100%;
+}
+.oform--input::placeholder {
+    padding: 0 4px;
+}
+.oform--input:focus {
+    outline: none;
+}
+.input--span {
+    width: 100%;
+}
+.first--input {
+    width: 20%;
+}
+.second--input {
+    width: 60%;
+}
+.oform--checkbox {
+    justify-content: flex-end;
+    text-align: right;
+}
+.oform--checkbox span:first-child {
+    padding-right: 10px;
+}
+.check--img2 {
+    padding: 0 4px 4px 4px;
+    visibility: hidden;
+}
+.check--img2.selected2 {
+    visibility: visible;
+}
+.oform--succes {
+    padding: 70px 0 200px;
+    display: none;
+}
+.oform--succes--title {
+    font-family: 'ArnoPro-BoldSubhead';
+    font-size: 20px;
+    color: #f4e9d4;
+    padding: 5px 20px 7px;
+    background-color: #46362f;
+    width: max-content;
+    margin: 0 auto;
+}
+.oform--succes--txt {
+    font-family: 'ArnoPro-Bold';
+    font-size: 20px;
+    color: #46362f;
+    padding: 10px 0;
+    line-height: 21px;
 }

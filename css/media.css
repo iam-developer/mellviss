@@ -8,6 +8,24 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .kabinet--block {
+        width: 35%;
+    }
+    .kabinet--block--title {
+        font-size: 14px;
+    }
+    .kabinet--block:last-child {
+        width: 65%;
+    }
+    .footer--elem {
+        flex-direction: column;
+    }
+    .footer--block {
+        padding: 20px 0 0;
+    }
+    .footer--logo--img {
+        text-align: right;
+    }
     .header--catalog img {
         max-width: 100%;
     }
@@ -75,6 +93,14 @@
     .product--item {
         margin: 10px 10px 0 0;
     }
+    .catalog--item {
+        margin: 20px;
+        width: 116px;
+        height: 110px;
+    }
+    #korzina--main {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 767px) {
     .main--block {
@@ -83,9 +109,6 @@
     .content {
         margin: 87px 0 20px;
         padding: 10px;
-    }
-    .footer--block {
-        justify-content: center;
     }
     .example--txt {
         padding: 0;
@@ -119,12 +142,16 @@
     .product--container {
         justify-content: center;
     }
+    .korzina--block1 img {
+        max-width: 100%;
+        height: auto;
+    }
+    .korzina--txt {
+        font-size: 10px;
+        line-height: 11px;
+    }
 }
 @media screen and (max-width: 576px) {
-    .footer--block {
-        padding: 0 14px;
-        justify-content: space-between;
-    }
     .footer--txt {
         margin: 0 0 0 2px;
         line-height: 14px;
@@ -141,6 +168,11 @@
         left: 75px;
     }
 }
+@media screen and (max-width: 500px) {
+    .politic--block a {
+        font-size: 12px;
+    }
+}
 @media screen and (max-width: 480px) {
     .container {
         max-width: 420px;
@@ -148,6 +180,49 @@
     .korzina--cost {
         left: auto;
         right: 44px;
+    }
+    .korzina--block2 {
+        width: 160px;
+    }
+    .oform--input {
+        width: 100%;
+    }
+    .oform--form--txt {
+        font-size: 14px;
+        text-align: left;
+        min-width: 135px;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 412px) {
+    .korzina--block6 {
+        width: 80px;
+    }
+    .korzina--block5 {
+        width: 70px;
+    }
+    .korzina--block3 {
+        width: 70px;
+    }
+    .korzina--block4 {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .zakazy span {
+        padding-right: 12px;
+    }
+    .kabinet--container {
+        flex-direction: column;
+    }
+    .kabinet--block {
+        width: 100%;
+    }
+    .kabinet--block:last-child {
+        width: 100%;
+    }
+    .korzina--txt {
+        padding: 2px;
     }
 }
 @media screen and (max-width: 356px) {
@@ -159,5 +234,31 @@
     }
     .extra {
         padding-right: 0;
+    }
+    .politic--block a {
+        font-size: 10px;
+    }
+    .korzina--block2 {
+        width: 120px;
+    }
+    .korzina--txt {
+        font-size: 9px;
+    }
+    .korzina--block1 {
+        width: 84px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .catalog--item {
+        margin: 14px;
+    }
+    .zakazy span {
+        font-size: 12px;
+    }
+    .korzina--block6 {
+        width: 70px;
+    }
+    .korzina--block5 {
+        width: 50px;
     }
 }

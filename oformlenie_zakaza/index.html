@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>МэллВис | Новости</title>
+    <title>МэллВис | Оформление заказа</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
@@ -20,7 +20,7 @@
                     <div class="col-lg-2 extra">
                         <div class="logo--block">
                             <!-- <img class="nad--logo img-fluid" src="img/MB.png" alt="MB"> -->
-                            <a href="../">
+                            <a href="./../">
                                 <img class="logo img-fluid" src="../img/logo.png" alt="Logo">
                             </a><br />
                             <a class="phone" href="tel:+74951233963">+7 495 123-39-63</a>
@@ -81,7 +81,7 @@
                                 <span><img src="../img/search.png" alt="поиск по сайту"></span>
                             </div>
                             <div class="menu--block">
-                                <a href="./../novosti/" class="menu--link active--menu">Новости</a>
+                                <a href="./../novosti/" class="menu--link">Новости</a>
                                 <a href="./../o_nas/" class="menu--link">О нас</a>
                                 <a href="./../dostavka/" class="menu--link">Доставка</a>
                                 <a href="./../akcii/" class="menu--link">Акции</a>
@@ -102,7 +102,7 @@
         </header>
 
         <div class="container">
-            <div class="main--block d-flex justify-content-start align-items-start col-lg-12">
+            <div id="korzina--main" class="main--block d-flex justify-content-start align-items-start col-lg-12">
                 <div class="col-lg-3">
                     <div class="categories">
                         <img src="../img/image.png" alt="">
@@ -322,19 +322,107 @@
                     </div>
                 </div>
                 <div class="content col-lg-9">
-                    <div class="call--back">
-                        <h3 class="content--title">Новости:</h3>
-                        <p class="call--back--txt">
-                            31.12.2020   13:17<br/><br/>
+                   <div class="oformlenie--bloock">
+                    <div class="call--back--txt oform--tit">Выбор способа доставки:</div>
+                    <div class="check--block">
+                        <span class="galochka--ramka">
+                            <img class="check--img selected" src="../img/galochka.png" alt="">
+                        </span>
+                        <span class="oform--text">
+                            Курьером 
+                        </span>
+                        <span>(199 рублей)</span>
+                    </div>
+                    <div class="check--block">
+                        <span class="galochka--ramka">
+                            <img class="check--img selected" src="../img/galochka.png" alt="">
+                        </span>
+                        <span class="oform--text">
+                            Почтой России 
+                        </span>
+                        <span>(рассчитать на калькуляторе)</span>
+                    </div>
+                    <div class="check--block oform--border">
+                        <span class="galochka--ramka">
+                            <img class="check--img selected" src="../img/galochka.png" alt="">
+                        </span>
+                        <span class="oform--text">
+                            Самовызов 
+                        </span>
+                        <span>(безоплатно)</span>
+                    </div>
+                    <div class="call--back--txt oform--tit">Адрес доставки:</div>
 
-                            ЗАВЕРШЕНА РЕКОНСТРУКЦИЯ ВОКЗАЛА ПЕТРОЗАВОДСКА: ТЕХНИЧЕСКАЯ НАЧИНКА НОВАЯ, АРХИТЕКТУРНЫЕ ДЕТАЛИ СОХРАНЕНЫ<br/><br/>
+                    <form action="" onsubmit="return false">
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                Индекс 
+                            </span>
+                            <span class="input--span">
+                                <input type="text" class="oform--input first--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                Регион 
+                            </span>
+                            <span class="input--span">
+                                <input type="text" class="oform--input second--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                Город 
+                            </span>
+                            <span class="input--span">
+                                <input type="text" class="oform--input second--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                Адрес 
+                            </span>
+                            <span class="input--span">
+                                <input type="text" class="oform--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                ФИО получателя 
+                            </span>
+                            <span class="input--span">
+                                <input type="text" class="oform--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block">
+                            <span class="oform--text oform--txt2 oform--form--txt">
+                                Телефон получателя 
+                            </span>
+                            <span class="input--span">
+                                <input type="tel" class="oform--input" required>
+                            </span>
+                        </div>
+                        <div class="check--block oform--checkbox">
+                            <span class="check--text">
+                                нажимая отправить вы соглашаетесь с политикой конфиденциальности<br/>обработки персональных данных
+                            </span>
+                            <span class="galochka--ramka">
+                                <img class="check--img selected" src="../img/galochka.png" alt="">
+                            </span>
+                        </div>
+                        <div class="oform-btn text-right">
+                            <button class="send--btn oformit--btn">Оформить</button>
+                        </div>
+                    </form>
+                    </div>
 
-                            ОАО «РЖД» завершило масштабную реконструкцию вокзального комплекса Петрозаводск. Вокзал построен в 1955 году в стиле позднего неоклассицизма. Отреставрирован исторический облик здания, проведена его адаптация для маломобильных пассажиров и построен новый пешеходный мост.<br/><br/>
-
-                            Особое внимание уделялось сохранению исторического облика вокзального комплекса, который представляет собой пример позднего неоклассицизма и является объектом культурного наследия. Реставрационные работы проводились в вестибюле здания вокзала и на балконе, на центральной лестнице восстановили мраморную облицовку, был выполнен ремонт стропильной системы купола с реставрацией ротонды и заменой шпиля.<br/><br/>
-
-                            Кроме того, на вокзале была создана безбарьерная среда – все функциональные зоны комплекса адаптированы для маломобильных пассажиров. Были установлены пандусы и подъемники, обновлены санитарные комнаты, установлена касса с пониженным прилавком. Вокзал оснащен индукционным оборудованием для слабослышащих посетителей, для пассажиров с нарушениями зрения размещены тактильно-контрастные указатели, пиктограммы, мнемосхемы и информирующие тактильные таблички, выполненные рельефно-точечным шрифтом Брайля.<br/><br/>
-                        </p>
+                    <div class="oform--succes text-center">
+                        <h2 class="oform--succes--title">Ваш заказ оформлен</h2>
+                        <div class="oform--succes--txt">
+                            Номер заказа № <span></span><br/>
+                            ожидайте подтверждения<br/><br/>
+                            Спасибо что выбрали наш магазин!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -372,7 +460,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="../js/jquery.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
